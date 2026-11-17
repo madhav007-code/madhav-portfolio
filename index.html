@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhav Gupta | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--bg:#090b0b;--card:#111615;--green:#b8f36b;--muted:#9ca6a0;--white:#f3f5f2}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:88%;max-width:1150px;margin:auto}
+nav{position:sticky;top:0;background:#090b0bed;backdrop-filter:blur(15px);z-index:10;border-bottom:1px solid #222}
+.nav{height:75px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Space Grotesk';font-size:24px;font-weight:700}
+.logo span{color:var(--green)}
+.links{display:flex;gap:25px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--green)}
+.hero{min-height:85vh;display:flex;align-items:center;padding:75px 0}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center}
+.tag{color:var(--green);font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h1{font-family:'Space Grotesk';font-size:clamp(45px,7vw,78px);line-height:1.1;margin:22px 0}
+h1 span{color:var(--green)}
+.hero p{color:var(--muted);max-width:570px;font-size:17px}
+.buttons{display:flex;gap:15px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:7px;font-weight:700;font-size:14px;border:1px solid #39433c;display:inline-block}
+.primary{background:var(--green);color:#10150b;border-color:var(--green)}
+.btn:hover{transform:translateY(-3px)}
+.profile{height:350px;border:1px solid #303b32;border-radius:20px;background:linear-gradient(145deg,#19241b,#101312);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.profile img{width:100%;height:100%;object-fit:cover}
+.profile-placeholder{font-family:'Space Grotesk';font-size:100px;color:var(--green)}
+section{padding:90px 0;border-top:1px solid #1c2420}
+.section-tag{color:var(--green);font-size:12px;letter-spacing:2px}
+h2{font-family:'Space Grotesk';font-size:38px;margin:8px 0 35px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about-grid p{color:var(--muted)}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.info div,.skill,.project,.video-card,.contact-card{background:var(--card);border:1px solid #26302a;border-radius:12px;padding:20px}
+.info small{color:var(--muted)}
+.info strong{display:block;margin-top:5px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.skill{transition:.3s}
+.skill:hover,.project:hover{border-color:var(--green);transform:translateY(-5px)}
+.skill h3{font-size:16px}
+.skill p{font-size:13px;color:var(--muted);margin-top:5px}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{padding:0;overflow:hidden}
+.project img{width:100%;height:220px;object-fit:cover;background:#18201a}
+.project-content{padding:23px}
+.project-content p{color:var(--muted);font-size:14px;margin:10px 0}
+.project-content a{color:var(--green);font-size:13px}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.video-card video{width:100%;border-radius:8px;background:#050505;margin-bottom:15px}
+.video-card p{font-size:13px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.service{padding:25px;background:var(--card);border:1px solid #26302a;border-radius:12px}
+.service h3{color:var(--green);margin-bottom:10px}
+.service p{font-size:14px;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card p{color:var(--muted);margin:10px 0}
+.contact-card a{color:var(--green);overflow-wrap:anywhere}
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
+footer span{color:var(--green)}
+@media(max-width:750px){
+ .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .profile{height:280px}
+ .skills{grid-template-columns:1fr 1fr}
+ .projects,.videos{grid-template-columns:1fr}
+ .services{grid-template-columns:1fr}
+ .links{gap:10px;font-size:11px}
+ .nav{height:auto;min-height:70px;flex-wrap:wrap;padding:12px 0}
+ h2{font-size:30px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav">
+<a href="#" class="logo">MADHAV<span>.</span></a>
+<div class="links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero container">
+<div class="hero-grid">
+<div>
+<div class="tag">Aspiring AI Engineer · Web Developer</div>
+<h1>Hi, I'm<br><span>Madhav Gupta.</span></h1>
+<p>
+A Computer Science student specializing in Artificial Intelligence
+and Machine Learning. I enjoy building websites, exploring technology
+and turning ideas into practical digital experiences.
+</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">Explore My Work ↗</a>
+<a class="btn" href="#contact">Get In Touch</a>
+</div>
+</div>
+
+<div class="profile">
+<img src="profile.jpg" alt="Madhav Gupta"
+onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+<div class="profile-placeholder" style="display:none">MG.</div>
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+<div class="section-tag">01 / ABOUT ME</div>
+<h2>A little about me.</h2>
+<div class="about-grid">
+<p>
+I'm Madhav Gupta, currently pursuing B.Tech in Computer Science
+Engineering with a specialization in AI & Machine Learning at
+Chitkara University.
+<br><br>
+I'm passionate about web development, programming and emerging
+technologies. I enjoy learning by building projects and continuously
+improving my technical and problem-solving skills.
+<br><br>
+My goal is to grow as a technology professional and create useful,
+well-designed digital products.
+</p>
+<div class="info">
+<div><small>Education</small><strong>B.Tech CSE</strong></div>
+<div><small>Specialization</small><strong>AI & ML</strong></div>
+<div><small>University</small><strong>Chitkara University</strong></div>
+<div><small>Graduation</small><strong>2029</strong></div>
+<div><small>Interest</small><strong>Web Development</strong></div>
+<div><small>Career Goal</small><strong>AI Engineer</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="section-tag">02 / MY TOOLKIT</div>
+<h2>Skills & Technologies.</h2>
+<div class="skills">
+<div class="skill"><h3>HTML5</h3><p>Web structure</p></div>
+<div class="skill"><h3>CSS3</h3><p>Styling & layouts</p></div>
+<div class="skill"><h3>JavaScript</h3><p>Interactive websites</p></div>
+<div class="skill"><h3>C Programming</h3><p>Programming fundamentals</p></div>
+<div class="skill"><h3>Python</h3><p>Programming & learning</p></div>
+<div class="skill"><h3>AI & ML</h3><p>Emerging technologies</p></div>
+<div class="skill"><h3>Responsive Design</h3><p>Mobile-friendly websites</p></div>
+<div class="skill"><h3>Problem Solving</h3><p>Logical thinking</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<div class="section-tag">03 / SELECTED WORK</div>
+<h2>Projects I've built.</h2>
+<div class="projects">
+
+<div class="project">
+<div class="project-content">
+<h3>SSD INFOTECH</h3>
+<p>
+A computer and laptop business website concept designed to
+present products and services through a clean digital experience.
+</p>
+<a href="#project-videos">View project video ↗</a>
+</div>
+</div>
+
+<div class="project">
+<div class="project-content">
+<h3>Internship Hub</h3>
+<p>
+An educational platform project focused on helping learners
+explore courses, internships and skill-development opportunities.
+</p>
+<a href="#project-videos">View project video ↗</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="project-videos">
+<div class="container">
+<div class="section-tag">04 / PROJECT SHOWCASE</div>
+<h2>See my work in action.</h2>
+<div class="videos">
+
+<div class="video-card">
+<video controls preload="metadata">
+<source src="ssd-infotech.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+<h3>SSD INFOTECH</h3>
+<p>Website walkthrough and project demonstration.</p>
+</div>
+
+<div class="video-card">
+<video controls preload="metadata">
+<source src="internship-hub.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+<h3>Internship Hub</h3>
+<p>Website walkthrough and project demonstration.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-tag">05 / WHAT I DO</div>
+<h2>Services & Interests.</h2>
+<div class="services">
+<div class="service">
+<h3>Website Development</h3>
+<p>Building clean and responsive websites using HTML, CSS and JavaScript.</p>
+</div>
+<div class="service">
+<h3>Frontend Design</h3>
+<p>Creating modern layouts and user-friendly website experiences.</p>
+</div>
+<div class="service">
+<h3>Continuous Learning</h3>
+<p>Exploring programming, AI, machine learning and new technologies.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-tag">06 / LET'S CONNECT</div>
+<h2>Have a project in mind?</h2>
+<div class="contact-grid">
+<div class="contact-card">
+<h3>Let's work together.</h3>
+<p>I'm open to connecting, learning and exploring website development opportunities.</p>
+<p>LinkedIn:<br>
+<a href="https://www.linkedin.com/in/madhav-gupta-62b85b350" target="_blank">Visit my LinkedIn ↗</a></p>
+<p>Fiverr:<br>
+<a href="https://fiverr.com/s/WebXDlB" target="_blank">Visit my Fiverr profile ↗</a></p>
+</div>
+<div class="contact-card">
+<h3>Get in touch</h3>
+<p>Email:</p>
+<a href="mailto:madhavgupta4182@gmail.com">madhavgupta4182@gmail.com</a>
+<p style="margin-top:20px">Location: Punjab, India</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>Designed & built by <span>Madhav Gupta</span> · © 2026</p>
+</footer>
+
+</body>
+</html>
